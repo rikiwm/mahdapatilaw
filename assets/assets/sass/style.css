@@ -463,7 +463,7 @@ img {
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
-    color: #CDB091;
+    color: #baa81d;
 }
 
 .wpo-section-title h2,
@@ -529,7 +529,7 @@ img {
 .theme-btn,
 .theme-btn-s2 {
     background: transparent;
-    color: #CDB091;
+    color: #baa81d;
     display: inline-block;
     font-weight: 600;
     padding: 12px 55px 17px;
@@ -624,10 +624,10 @@ img {
 }
 
 .theme-btn-s2 {
-    background: #CDB091;
+    background: #baa81d;
     color: #fff;
     display: inline-block;
-    border: 1px solid #CDB091;
+    border: 1px solid #baa81d;
     text-transform: capitalize;
     padding: 12px 55px;
     z-index: 1;
@@ -2811,7 +2811,7 @@ img {
         width: 100%;
     }
     .wpo-site-header .mobail-menu button {
-        background-color: #CDB091;
+        background-color: #baa81d;
         width: 40px;
         height: 35px;
         border: 0;
@@ -3113,13 +3113,13 @@ img {
 
 @media (max-width: 991px) {
     .wpo-header-style-2 .navigation #navbar {
-        background: #26394c;
+        background: #bfaa21;
     }
 }
 
 @media (min-width: 991px) {
     .wpo-header-style-2 .navigation #navbar ul.nav .sub-menu {
-        background: #386453;
+        background: #bfaa21;
     }
 }
 
@@ -3258,7 +3258,7 @@ img {
 .wpo-header-style-1 .header-search-form,
 .wpo-header-style-2 .header-search-form,
 .wpo-header-style-3 .header-search-form {
-    background: #26394c;
+    background: #baa81d;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -3266,7 +3266,7 @@ img {
 .wpo-header-style-1 .header-search-form input,
 .wpo-header-style-2 .header-search-form input,
 .wpo-header-style-3 .header-search-form input {
-    background: #26394c;
+    background: #baa81d;
     border-color: #2d455c;
     color: #fff;
 }
@@ -4049,7 +4049,7 @@ img {
     font-weight: 400;
     font-size: 30px;
     line-height: 41px;
-    color: #CDB091;
+    color: #baa81d;
     font-family: "DM Serif Text", serif;
 }
 
@@ -4413,7 +4413,7 @@ img {
 --------------------------------------------*/
 
 .static-hero {
-    background: rgb(30, 62, 49);
+    background: #fff;
     height: 900px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4642,7 +4642,7 @@ img {
 
 @media (max-width: 575px) {
     .static-hero .lawyer-pic .exprience {
-        bottom: 85px;
+        bottom: 5px;
     }
 }
 
@@ -4683,7 +4683,7 @@ img {
     font-weight: 400;
     font-size: 120px;
     line-height: 165px;
-    color: #CDB091;
+    color: #baa81d;
 }
 
 @media (max-width: 1199px) {
@@ -4695,7 +4695,7 @@ img {
 
 @media (max-width: 390px) {
     .static-hero .lawyer-pic .exprience .exprience-left h4 {
-        font-size: 50px;
+        font-size: 20px;
         line-height: 65px;
     }
 }
@@ -5035,7 +5035,7 @@ img {
 }
 
 .wpo-site-footer .newsletter-widget form .submit button {
-    background: #CDB091;
+    background: #baa81d;
     border: 0;
     outline: 0;
     font-size: 20px;
@@ -5181,6 +5181,7 @@ img {
     .wpo-about-section-s2 .wpo-about-img,
     .wpo-about-section-s3 .wpo-about-img,
     .wpo-about-section-s4 .wpo-about-img {
+        
         padding: 10px;
     }
 }
@@ -7364,7 +7365,7 @@ img {
 }
 
 .wpo-contact-section-s2 .wpo-contact-section-wrapper .wpo-contact-form-area {
-    background: #AD9071;
+    background: #6c6b28;
     max-width: 100%;
     border: 0;
     padding: 75px;
@@ -7559,7 +7560,7 @@ img {
 
 @media (max-width: 575px) {
     .wpo-about-section-s3 {
-        padding-top: 0px;
+        padding-top: 20px;
     }
 }
 

@@ -22,10 +22,13 @@
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/sass/style.css" rel="stylesheet">
+    <style type="text/css">
+
+    </style>
 </head>
-
+<div id="google_translate_element2" style="display: none;"></div>
 <body>
-
+   
     <!-- start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
@@ -98,6 +101,9 @@
                           
                                         </li>
                                         <li><a href="contacttxt">Contact</a></li>
+                                      
+                                        
+                                        
                                     </ul>
                                 </div>
                                 <!-- end of nav-collapse -->
@@ -106,9 +112,19 @@
                                 <div class="header-right">
 
                                     <div class="header-search-form-wrapper">
+                                        <div class="wpo-contact-form-area">
+                                            <select onchange="doGTranslate(this);" class="form-control">
+                                                <option disabled="disabled" selected>Bahasa</option>            
+                                                <option value="id|en" > Eng</option>
+                                                <option value="id|id" >Ind</option> 
+                                         </select>
+                                         </div>
                                         <div class="cart-search-contact">
-                                            <button class="search-toggle-btn"><i
+                                            <!-- <button class="search-toggle-btn"><i
                                                     class="fi flaticon-026-search"></i></button>
+
+                                                 
+
                                             <div class="header-search-form">
                                                 <form>
                                                     <div>
@@ -117,7 +133,8 @@
                                                                 class="fi flaticon-026-search"></i></button>
                                                     </div>
                                                 </form>
-                                            </div>
+                                                
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -138,6 +155,7 @@
                             <div data-swiper-parallax="300" class="sub-title">
                                 <span>Mahdapati Lawyers Egency</span>
                             </div>
+                            
                             <div data-swiper-parallax="300" class="slide-title">
                                 <h2 style="color:#525252">Solusi kreatif untuk masalah hukum</h2>
                             </div>
@@ -147,7 +165,7 @@
                             </div>
                             <div class="clearfix"></div>
                             <div data-swiper-parallax="500" class="slide-btns">
-                                <a href="abouttxt" class="theme-btn-s2">Jelajahi lebih lanjut</a>
+                                <a href="#" class="theme-btn-s2">Jelajahi lebih lanjut</a>
                             </div>
                         </div>
                         
@@ -836,6 +854,53 @@
     <script src="assets/js/jquery-plugin-collection.js"></script>
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+
+    <!-- translate -->
+    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+    <script type="text/javascript"> 
+     function googleTranslateElementInit2() {
+      new google.translate.TranslateElement(
+      {
+       pageLanguage: 'id',
+       autoDisplay: false
+      },
+  
+      'google_translate_element2');
+     }
+  
+     function GTranslateFireEvent(element,event){
+      try{
+       if(document.createEventObject){
+        var evt=document.createEventObject();
+        element.fireEvent('on'+event,evt)
+       }   
+       else{
+        var evt=document.createEvent('HTMLEvents');
+        evt.initEvent(event,true,true);
+        element.dispatchEvent(evt)
+       }
+      }
+      catch(e){}
+     }
+  
+     function doGTranslate(lang_pair){
+      if(lang_pair.value)lang_pair=lang_pair.value;
+      if(lang_pair=='')return;
+       var lang=lang_pair.split('|')[1];
+       var teCombo;
+       var sel=document.getElementsByTagName('select');
+      for(var i=0;i<sel.length;i++)
+       if(sel[i].className=='goog-te-combo')teCombo=sel[i];
+       if(document.getElementById('google_translate_element2')==null||document.getElementById('google_translate_element2').innerHTML.length==0||teCombo.length==0||teCombo.innerHTML.length==0)
+       {
+        setTimeout(function(){doGTranslate(lang_pair)},500)
+       }
+       else{
+        teCombo.value=lang;GTranslateFireEvent(teCombo,'change');
+        GTranslateFireEvent(teCombo,'change')
+       }
+     }
+    </script>
 </body>
 
 
